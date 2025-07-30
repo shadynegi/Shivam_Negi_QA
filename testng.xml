@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Chatbot Test Suite" verbose="1" preserve-order="true">
+    
+    <!-- Configure listeners -->
+    <listeners>
+        <listener class-name="chatbot.Report"/>
+    </listeners>
+    
+    <!-- Test configuration -->
+    <test name="Chatbot Test Execution" preserve-order="true">
+        <classes>
+        	<class name="chatbot.Initialization"/>
+            <class name="chatbot.Login"/>
+            <class name="chatbot.SignUp"/>
+            <class name="chatbot.ResetPassword"/>
+            <class name="chatbot.ResourceCenter"/>
+            <class name="chatbot.RCTraining"/>
+            <class name="chatbot.ChatbotCreation"/>
+            <class name="chatbot.ChatbotDetails"/>
+        </classes>
+    </test>
+</suite>
